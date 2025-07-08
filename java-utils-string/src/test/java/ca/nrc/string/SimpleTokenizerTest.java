@@ -67,8 +67,8 @@ public class SimpleTokenizerTest {
 		String text = "Hello world. Take me to your leader.";
 		String[] gotTokens = SimpleTokenizer.tokenize(text, true);
 		String[] expTokens = new String[] {
-			"Hello", " ","world", ". ", "Take", " ", "me", 
-			" ", "to", " ", "your", " ", "leader", "."	
+			"Hello", " ","world", ". ", "Show", " ", "me", 
+			" ", "to", " ", "your", " ", "leader", "?"	
 		};
 		AssertObject.assertDeepEquals("Tokens not as expected", 
 				expTokens, gotTokens);
